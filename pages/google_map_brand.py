@@ -7,7 +7,7 @@ st.sidebar.markdown("# Google Map 品牌輿情")
 
 title = "Google Map 品牌輿情 0101-0131"
 st.header(f"{title}")
-data = pd.read_csv("//wsl$/Ubuntu-20.04/home/tkb0004658/project/comment/gmap_review_brand_2023-01-01_2023-01-31.csv")
+data = pd.read_csv("data/pages/gmap_review_brand_2023-01-01_2023-01-31.csv")
 data = data.drop("Unnamed: 0",axis = 1)
 n_rows = len(data)
 n_columns = len(data.columns)
