@@ -6,7 +6,7 @@ st.sidebar.markdown("# Google Map 店點輿情")
 
 title = "Google Map 店點輿情 0101-0131"
 st.header(f"{title}")
-data = pd.read_csv("data/gmap_table_all_2023-01-01_2023-01-31.csv")
+data = pd.read_csv("data/pages/gmap_table_all_2023-01-01_2023-01-31.csv")
 data = data.drop("Unnamed: 0",axis = 1)
 data = data.drop("index",axis = 1)
 n_rows = len(data)
